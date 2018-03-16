@@ -38,3 +38,4 @@ Released under [MIT License][licence]
 [amazonka]: https://hackage.haskell.org/package/amazonka
 [aws]: https://aws.amazon.com/
 [aws-via-haskell]: http://blog.rcook.org/blog/2017/aws-via-haskell/
+[licence]: LICENSE
