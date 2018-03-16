@@ -1,5 +1,5 @@
 {-|
-Module      : AWSViaHaskell
+Module      : Network.AWS.Simple
 Description : Umbrella module
 Copyright   : (C) Richard Cook, 2017
 License     : MIT
@@ -8,18 +8,18 @@ Stability   : experimental
 Portability : portable
 -}
 
-module AWSViaHaskell
-    ( module AWSViaHaskell.Classes
-    , module AWSViaHaskell.Prelude
-    , module AWSViaHaskell.Service
-    , module AWSViaHaskell.TH
-    , module AWSViaHaskell.Types
-    , module AWSViaHaskell.Util
+module Network.AWS.Simple
+    ( module Network.AWS.Simple.Classes
+    , module Network.AWS.Simple.Prelude
+    , module Network.AWS.Simple.Service
+    , module Network.AWS.Simple.TH
+    , module Network.AWS.Simple.Types
+    , module Network.AWS.Simple.Util
     ) where
 
-import           AWSViaHaskell.Classes
-import           AWSViaHaskell.Prelude
-import           AWSViaHaskell.Service
-import           AWSViaHaskell.TH
-import           AWSViaHaskell.Types
-import           AWSViaHaskell.Util
+import           Network.AWS.Simple.Classes
+import           Network.AWS.Simple.Prelude
+import           Network.AWS.Simple.Service
+import           Network.AWS.Simple.TH
+import           Network.AWS.Simple.Types
+import           Network.AWS.Simple.Util

@@ -1,5 +1,5 @@
 {-|
-Module      : AWSViaHaskell.Types
+Module      : Network.AWS.Simple.Types
 Description : Support types
 Copyright   : (C) Richard Cook, 2017
 License     : MIT
@@ -12,7 +12,7 @@ This modules provides support types for the "AWS via Haskell" project.
 
 {-# LANGUAGE TemplateHaskell #-}
 
-module AWSViaHaskell.Types
+module Network.AWS.Simple.Types
     ( Session(..)
     , sEnv
     , sRegion

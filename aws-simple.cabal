@@ -27,13 +27,13 @@ library
                                           , resourcet
                                           , template-haskell
                                           , text
-  exposed-modules:                          AWSViaHaskell
-                                          , AWSViaHaskell.Classes
-                                          , AWSViaHaskell.Prelude
-                                          , AWSViaHaskell.Service
-                                          , AWSViaHaskell.TH
-                                          , AWSViaHaskell.Types
-                                          , AWSViaHaskell.Util
+  exposed-modules:                          Network.AWS.Simple
+                                          , Network.AWS.Simple.Classes
+                                          , Network.AWS.Simple.Prelude
+                                          , Network.AWS.Simple.Service
+                                          , Network.AWS.Simple.TH
+                                          , Network.AWS.Simple.Types
+                                          , Network.AWS.Simple.Util
 
 executable aws-simple-app
   default-language:                         Haskell2010

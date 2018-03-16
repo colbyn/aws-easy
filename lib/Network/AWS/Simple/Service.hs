@@ -1,5 +1,5 @@
 {-|
-Module      : AWSViaHaskell.Service
+Module      : Network.AWS.Simple.Service
 Description : Configuring and making client connections to AWS services
 Copyright   : (C) Richard Cook, 2017
 License     : MIT
@@ -19,7 +19,7 @@ This modules provides support for configuring and making client connections to A
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE TypeFamilies #-}
 
-module AWSViaHaskell.Service
+module Network.AWS.Simple.Service
     ( AWSConfig
     , Endpoint(..)
     , HostName
@@ -33,8 +33,6 @@ module AWSViaHaskell.Service
     , withAWS
     ) where
 
-import           AWSViaHaskell.Classes
-import           AWSViaHaskell.Types
 import           Control.Lens ((<&>), makeLenses, set)
 import           Control.Monad.Trans.AWS
                     ( AWST'
@@ -59,6 +57,8 @@ import           Network.AWS
                     , runResourceT
                     , setEndpoint
                     )
+import           Network.AWS.Simple.Classes
+import           Network.AWS.Simple.Types
 import           System.IO (stdout)
 
 type HostName = ByteString
