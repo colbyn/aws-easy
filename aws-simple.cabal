@@ -6,7 +6,7 @@ license-file:                               LICENSE
 author:                                     Richard Cook
 maintainer:                                 rcook@rcook.org
 copyright:                                  2018 Richard Cook
-category:                                   Command Line
+category:                                   Network
 build-type:                                 Simple
 cabal-version:                              >= 1.10
 extra-source-files:                         README.md

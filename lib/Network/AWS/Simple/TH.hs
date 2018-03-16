@@ -1,7 +1,7 @@
 {-|
 Module      : Network.AWS.Simple.TH
 Description : Template Haskell helpers for 'Network.AWS.Simple'
-Copyright   : (C) Richard Cook, 2017
+Copyright   : (C) Richard Cook, 2018
 License     : MIT
 Maintainer  : rcook@rcook.org
 Stability   : experimental

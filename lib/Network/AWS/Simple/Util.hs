@@ -1,7 +1,7 @@
 {-|
 Module      : Network.AWS.Simple.Util
 Description : General-purpose helper functions
-Copyright   : (C) Richard Cook, 2017
+Copyright   : (C) Richard Cook, 2018
 License     : MIT
 Maintainer  : rcook@rcook.org
 Stability   : experimental
