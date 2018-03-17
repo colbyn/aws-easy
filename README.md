@@ -1,4 +1,4 @@
-# AWS Simple
+# AWS Easy
 
 A simplified, high-level [AWS][aws] API built on top of [amazonka][amazonka]
 
@@ -10,7 +10,7 @@ This is a collection of helper functions and some Template Haskell that I use re
 ### Clone repository
 
 ```
-git clone https://github.com/rcook/aws-simple.git
+git clone https://github.com/rcook/aws-easy.git
 ```
 
 ### Install compiler

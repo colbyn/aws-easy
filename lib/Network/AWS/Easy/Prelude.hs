@@ -1,5 +1,5 @@
 {-|
-Module      : Network.AWS.Simple.Prelude
+Module      : Network.AWS.Easy.Prelude
 Description : Re-exports of most commonly used Amazonka functions
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
@@ -10,7 +10,7 @@ Portability : portable
 This module provides re-exports of most commonly used Amazonka functions as well as lens and error-handling functions.
 -}
 
-module Network.AWS.Simple.Prelude
+module Network.AWS.Easy.Prelude
     ( (^.)
     , (&)
     , (.~)

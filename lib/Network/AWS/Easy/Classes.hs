@@ -1,5 +1,5 @@
 {-|
-Module      : Network.AWS.Simple.Classes
+Module      : Network.AWS.Easy.Classes
 Description : Service and session type classes
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
@@ -13,13 +13,13 @@ This modules provides service and session type classes for the "AWS via Haskell"
 {-# LANGUAGE AllowAmbiguousTypes #-}
 {-# LANGUAGE TypeFamilies #-}
 
-module Network.AWS.Simple.Classes
+module Network.AWS.Easy.Classes
     ( ServiceClass(..)
     , SessionClass(..)
     ) where
 
 import           Network.AWS (Service)
-import           Network.AWS.Simple.Types
+import           Network.AWS.Easy.Types
 
 class ServiceClass a where
     type TypedSession a :: *

@@ -1,6 +1,6 @@
 {-|
-Module      : Network.AWS.Simple.TH
-Description : Template Haskell helpers for 'Network.AWS.Simple'
+Module      : Network.AWS.Easy.TH
+Description : Template Haskell helpers for 'Network.AWS.Easy'
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
 Maintainer  : rcook@rcook.org
@@ -12,14 +12,14 @@ This modules provides Template Haskell helper functions for eliminating boilerpl
 
 {-# LANGUAGE TemplateHaskell #-}
 
-module Network.AWS.Simple.TH
+module Network.AWS.Easy.TH
     ( wrapAWSService
     ) where
 
 import           Language.Haskell.TH
 import           Network.AWS (Service)
-import           Network.AWS.Simple.Classes
-import           Network.AWS.Simple.Types
+import           Network.AWS.Easy.Classes
+import           Network.AWS.Easy.Types
 
 -- |Generates type-safe AWS service and session wrappers types for use with
 -- 'AWSViaHaskell.AWSService.connect' and 'AWSViaHaskell.AWSService.withAWS' functions

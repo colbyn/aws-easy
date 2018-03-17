@@ -1,5 +1,5 @@
 {-|
-Module      : Network.AWS.Simple.Service
+Module      : Network.AWS.Easy.Service
 Description : Configuring and making client connections to AWS services
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
@@ -19,7 +19,7 @@ This modules provides support for configuring and making client connections to A
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE TypeFamilies #-}
 
-module Network.AWS.Simple.Service
+module Network.AWS.Easy.Service
     ( AWSConfig
     , Endpoint(..)
     , HostName
@@ -57,8 +57,8 @@ import           Network.AWS
                     , runResourceT
                     , setEndpoint
                     )
-import           Network.AWS.Simple.Classes
-import           Network.AWS.Simple.Types
+import           Network.AWS.Easy.Classes
+import           Network.AWS.Easy.Types
 import           System.IO (stdout)
 
 type HostName = ByteString

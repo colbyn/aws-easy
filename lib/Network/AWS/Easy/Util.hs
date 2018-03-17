@@ -1,5 +1,5 @@
 {-|
-Module      : Network.AWS.Simple.Util
+Module      : Network.AWS.Easy.Util
 Description : General-purpose helper functions
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
@@ -13,7 +13,7 @@ This modules provides general-purpose helper functions for the "AWS via Haskell"
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE RecordWildCards #-}
 
-module Network.AWS.Simple.Util
+module Network.AWS.Easy.Util
     ( intToText
     , parseInt
     ) where
