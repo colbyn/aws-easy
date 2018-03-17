@@ -1,5 +1,7 @@
 name:                                       aws-simple
 version:                                    0.1.0.0
+synopsis:                                   AWS Simple: Helper functions for working with amazonka
+description:                                This package provides assorted functions and some Template Haskell to simplify working the amazonka family of packages for interacting with Amazon Web Services.
 homepage:                                   https://github.com/rcook/aws-simple#readme
 license:                                    MIT
 license-file:                               LICENSE
