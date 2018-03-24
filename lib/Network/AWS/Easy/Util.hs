@@ -7,7 +7,7 @@ Maintainer  : rcook@rcook.org
 Stability   : experimental
 Portability : portable
 
-This modules provides general-purpose helper functions for the "AWS via Haskell" project.
+This module provides general-purpose helper functions for the interacting with @amazonka@.
 -}
 
 {-# LANGUAGE FlexibleContexts #-}

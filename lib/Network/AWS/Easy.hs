@@ -1,6 +1,6 @@
 {-|
 Module      : Network.AWS.Easy
-Description : Umbrella module
+Description : Main @aws-easy@ module
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
 Maintainer  : rcook@rcook.org

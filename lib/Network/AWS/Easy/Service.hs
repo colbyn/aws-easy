@@ -7,7 +7,7 @@ Maintainer  : rcook@rcook.org
 Stability   : experimental
 Portability : portable
 
-This modules provides support for configuring and making client connections to AWS services for the "AWS via Haskell" project.
+This module provides support for configuring and making client connections to AWS services using @amazonka@.
 -}
 
 {-# LANGUAGE AllowAmbiguousTypes #-}

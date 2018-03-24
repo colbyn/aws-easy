@@ -1,13 +1,13 @@
 {-|
 Module      : Network.AWS.Easy.TH
-Description : Template Haskell helpers for 'Network.AWS.Easy'
+Description : Template Haskell helpers for @Network.AWS.Easy@
 Copyright   : (C) Richard Cook, 2018
 License     : MIT
 Maintainer  : rcook@rcook.org
 Stability   : experimental
 Portability : portable
 
-This modules provides Template Haskell helper functions for eliminating boilerplate
+This module provides Template Haskell helper functions for generating type-safe service/session wrappers for @amazonka@.
 -}
 
 {-# LANGUAGE TemplateHaskell #-}
@@ -21,32 +21,44 @@ import           Network.AWS (Service)
 import           Network.AWS.Easy.Classes
 import           Network.AWS.Easy.Types
 
--- |Generates type-safe AWS service and session wrappers types for use with
+-- |Generates type-safe AWS service and session wrapper types for use with
 -- 'AWSViaHaskell.AWSService.connect' and 'AWSViaHaskell.AWSService.withAWS' functions
 --
 -- Example top-level invocation:
 --
 -- @
--- wrapAWSService \'dynamoDB \"DDBService\" \"DDBSession\"
+-- {-\# LANGUAGE TemplateHaskell \#-}
+-- {-\# LANGUAGE TypeFamilies \#-}
+--
+-- module MyApp.Services
+--     ( DynamoDBService
+--     , DynamoDBSession
+--     , dynamoDBService
+--     ) where
+--
+-- import Network.AWS.DynamoDB (dynamoDB)
+-- import Network.AWS.Easy (wrapAWSService)
+--
+-- wrapAWSService \'dynamoDB \"DynamoDBService\" \"DynamoDBSession\"
 -- @
 --
 -- This will generate boilerplate like the following:
 --
 -- @
--- data DDBService = DDBService Service
+-- data DynamoDBService = DynamoDBService Service
 --
--- data DDBSession = DDBSession Session
+-- data DynamoDBSession = DynamoDBSession Session
 --
--- instance ServiceClass DDBService where
---     type TypedSession DDBService = DDBSession
---     rawService (DDBService x) = x
---     wrappedSession = DDBSession
+-- instance ServiceClass DynamoDBService where
+--     type TypedSession DynamoDBService = DynamoDBSession
+--     rawService (DynamoDBService x) = x
+--     wrappedSession = DynamoDBSession
 --
--- instance SessionClass DDBSession where
---     rawSession (DDBSession x) = x
+-- instance SessionClass DynamoDBSession where
+--     rawSession (DynamoDBSession x) = x
 --
--- dynamoDBService :: DDBService
--- dynamoDBService = DDBService dynamoDB
+-- dynamoDBService :: DynamoDBService
+-- dynamoDBService = DynamoDBService dynamoDB
 -- @
 wrapAWSService ::
     Name        -- ^ Name of the amazonka 'Network.AWS.Types.Service' value to wrap

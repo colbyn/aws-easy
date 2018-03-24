@@ -7,7 +7,7 @@ Maintainer  : rcook@rcook.org
 Stability   : experimental
 Portability : portable
 
-This modules provides service and session type classes for the "AWS via Haskell" project.
+This module provides service and session type classes to support @aws-easy@'s Template Haskell functions.
 -}
 
 {-# LANGUAGE AllowAmbiguousTypes #-}

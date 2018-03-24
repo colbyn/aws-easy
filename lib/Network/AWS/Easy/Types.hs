@@ -7,7 +7,7 @@ Maintainer  : rcook@rcook.org
 Stability   : experimental
 Portability : portable
 
-This modules provides support types for the "AWS via Haskell" project.
+This module provides support types for @aws-easy@.
 -}
 
 {-# LANGUAGE TemplateHaskell #-}
