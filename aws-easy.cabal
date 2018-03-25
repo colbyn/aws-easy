@@ -22,13 +22,11 @@ library
   hs-source-dirs:                           lib
   ghc-options:                              -W -Wall -fwarn-incomplete-patterns -fwarn-unused-imports
   build-depends:                            amazonka
-                                          , amazonka-core
                                           , base >= 4.7 && < 5
                                           , bytestring
                                           , lens
                                           , resourcet
                                           , template-haskell
-                                          , text
   exposed-modules:                          Network.AWS.Easy
                                           , Network.AWS.Easy.Classes
                                           , Network.AWS.Easy.Service
