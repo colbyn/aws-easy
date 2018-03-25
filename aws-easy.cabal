@@ -31,7 +31,6 @@ library
                                           , text
   exposed-modules:                          Network.AWS.Easy
                                           , Network.AWS.Easy.Classes
-                                          , Network.AWS.Easy.Prelude
                                           , Network.AWS.Easy.Service
                                           , Network.AWS.Easy.TH
                                           , Network.AWS.Easy.Types
