@@ -46,6 +46,7 @@ executable aws-easy-demo
                                           , amazonka-s3
                                           , aws-easy
                                           , base >= 4.7 && < 5
+                                          , lens
                                           , split
                                           , text
                                           , unordered-containers

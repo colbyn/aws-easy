@@ -16,6 +16,7 @@ This programs lists S3 buckets and puts an item per bucket in DynamoDB.
 
 module Main (main) where
 
+import           Control.Lens ((&), (.~), (^.))
 import           Control.Monad (void)
 import           Data.Foldable (for_)
 import qualified Data.HashMap.Strict as HashMap (fromList)
@@ -23,6 +24,8 @@ import qualified Data.List.NonEmpty as NonEmpty (fromList)
 import           Data.List.Split (chunksOf)
 import           Data.Text (Text)
 import qualified Data.Text as Text (pack)
+import           Network.AWS (Credentials(..), send)
+import           Network.AWS.Data (toText)
 import           Network.AWS.DynamoDB
                     ( attributeValue
                     , avS
@@ -35,6 +38,14 @@ import           Network.AWS.DynamoDB
                     , writeRequest
                     )
 import           Network.AWS.Easy
+                    ( AWSConfig
+                    , Endpoint(..)
+                    , awsConfig
+                    , awscCredentials
+                    , connect
+                    , withAWS
+                    , wrapAWSService
+                    )
 import           Network.AWS.S3
                     ( BucketName
                     , bName
