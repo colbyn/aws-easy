@@ -35,7 +35,6 @@ library
                                           , Network.AWS.Easy.Service
                                           , Network.AWS.Easy.TH
                                           , Network.AWS.Easy.Types
-                                          , Network.AWS.Easy.Util
 
 executable aws-easy-demo
   default-language:                         Haskell2010

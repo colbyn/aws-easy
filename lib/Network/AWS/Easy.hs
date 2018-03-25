@@ -14,7 +14,6 @@ module Network.AWS.Easy
     , module Network.AWS.Easy.Service
     , module Network.AWS.Easy.TH
     , module Network.AWS.Easy.Types
-    , module Network.AWS.Easy.Util
     ) where
 
 import           Network.AWS.Easy.Classes
@@ -22,4 +21,3 @@ import           Network.AWS.Easy.Prelude
 import           Network.AWS.Easy.Service
 import           Network.AWS.Easy.TH
 import           Network.AWS.Easy.Types
-import           Network.AWS.Easy.Util
