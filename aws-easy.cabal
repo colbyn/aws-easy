@@ -37,10 +37,16 @@ library
                                           , Network.AWS.Easy.Types
                                           , Network.AWS.Easy.Util
 
-executable aws-easy-app
+executable aws-easy-demo
   default-language:                         Haskell2010
   hs-source-dirs:                           app
   main-is:                                  Main.hs
   ghc-options:                              -threaded -rtsopts -with-rtsopts=-N -W -Wall -fwarn-incomplete-patterns -fwarn-unused-imports
-  build-depends:                            aws-easy
+  build-depends:                            amazonka
+                                          , amazonka-dynamodb
+                                          , amazonka-s3
+                                          , aws-easy
                                           , base >= 4.7 && < 5
+                                          , split
+                                          , text
+                                          , unordered-containers
