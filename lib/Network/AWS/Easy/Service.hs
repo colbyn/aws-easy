@@ -41,8 +41,7 @@ import           Control.Monad.Trans.AWS
                     , within
                     )
 import           Control.Monad.Trans.Resource
-                    ( MonadBaseControl
-                    , ResourceT
+                    ( ResourceT
                     )
 import           Data.ByteString (ByteString)
 import           Network.AWS
@@ -60,6 +59,8 @@ import           Network.AWS
 import           Network.AWS.Easy.Classes
 import           Network.AWS.Easy.Types
 import           System.IO (stdout)
+import           Control.Monad.Trans.Control (MonadBaseControl)
+import           Control.Monad.IO.Unlift (MonadUnliftIO)
 
 type HostName = ByteString
 
@@ -102,7 +103,7 @@ regionService (AWSRegion region) s = (region, s)
 -- Run against a local DynamoDB instance on a given host and port
 regionService (Local hostName port) s = (NorthVirginia, setEndpoint False hostName port s)
 
-withAWS :: (MonadBaseControl IO m, SessionClass b) =>
+withAWS :: (MonadBaseControl IO m, MonadUnliftIO m, SessionClass b) =>
     AWST' Env (ResourceT m) a
     -> b
     -> m a
